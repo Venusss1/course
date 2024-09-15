@@ -1,0 +1,225 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{color}
+\usepackage[UTF8]{ctex}
+\usepackage{amsmath}
+\usepackage{tabularray}
+
+
+
+%\newcommand{\upsite}[1]{\textsuperscript}{cite{#1}}
+
+%\bibliographystyle{unsrt}
+\begin{document}
+\begin{figure}[t]
+    \includegraphics[width=0.2\textwidth]{ouc.jpg}
+\end{figure}
+
+\title{实验报告}
+\author{单衍喆 }
+\date{\today}
+\maketitle
+
+\pagenumbering{roman}
+\text{GitHub地址：https://github.com/Venusss1/course.git}
+\tableofcontents
+\newpage
+%\pagenumbering{arabic}
+
+
+\section{\underline{\color{blue}实验内容}}
+
+\begin{enumerate}
+    \item \textbf{LaTex文档编辑}
+    \item \textbf{版本控制工具git}
+\end{enumerate}
+\section{\underline{\color{blue}实验设计}}
+\subsection{\color{red}LaTex文档编辑}
+
+\subsubsection{\color{green}LaTex安装与环境配置}
+\begin{enumerate}
+    \item 进入网站清华大学开源软件站下载TexLive
+          \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{website.png}
+              \caption{清华大学开源软件站}
+              \label{website}
+          \end{figure}
+    \item 执行ios文件安装
+    \item vscode配置环境
+          \begin{itemize}
+              \item[+] 安装LaTex workshop 插件
+              \item[+] 配置.json文件
+          \end{itemize}
+\end{enumerate}
+\subsubsection{\color{green}基本命令}
+
+\begin{table}[htbp]
+    \centering
+    \caption{\color{green}基本命令}
+    \begin{tblr}{
+            cell{2}{1} = {c,fg=cyan},
+            cell{3}{1} = {c,fg=cyan},
+            cell{4}{1} = {c,fg=cyan},
+            cell{5}{1} = {c,fg=cyan},
+            cell{6}{1} = {c,fg=cyan},
+            vline{2} = {1-5}{},
+            hline{1-2} = {-}{},
+        }
+        符号 & \textsf{作用}      \\
+        \% & \textsf{注释}      \\
+        \textbackslash{}  & \textsf{命令和特殊意义} \\
+        \$ & \textsf{公式}      \\
+        \&   & \textsf{对齐}
+    \end{tblr}
+\end{table}
+
+\subsubsection{\color{green}文档结构}
+\begin{enumerate}
+    \item 设定区域
+          \begin{itemize}
+              \item documentclass{}
+              \item usepackage{}
+          \end{itemize}
+    \item 各级标题
+          \begin{itemize}
+              \item cheaper -- 章
+              \item section -- 节
+              \item subsection -- 小节
+              \item subsubsection -- 小小节
+          \end{itemize}
+    \item 段落设置
+          \begin{itemize}
+              \item par:分段
+              \item newpage:分页命令
+          \end{itemize}
+\end{enumerate}
+\subsubsection{\color{green}插入}
+\begin{itemize}
+    \item 数学公式
+          \begin{itemize}
+              \item 正文行中的特殊字符和短公式：使用两个\$包括要表达的公式
+              \item 单行公式带编号：equation
+              \item 无编号公式：使用双\$包括
+              \item 多行公式:split(usepackage(amsmath))
+              \item 多情况讨论:cases(usepackage(amsmath))
+              \begin{equation}
+                F(x)=
+                \begin{cases}
+                    0&,\color{blue}\text{if $x=0$}\\
+                    -x+1&, \color{blue}\text{if $x>0$}\\
+                    x+1&, \color{blue}\text{if $x<0$}
+                \end{cases}
+              \end{equation}
+          \end{itemize}
+    \item 图片
+          \begin{itemize}
+              \item usepackage\{graphicx\}
+              \item begin\{figure\}...end\{figure\}\\begin\{figure*\}...end\{figure*\}
+              \item 常用命令:
+                    \begin{itemize}
+                        \item centering:居中
+                        \item includegraphics[图片大小][图片路径]
+                        \item caption\{图片说明\}
+                        \item label\{标签\}
+                    \end{itemize}
+              \item htbp
+                    \begin{itemize}
+                        \item h(here):尽量放置在代码所在位置
+                        \item t(top):放置在页面顶部
+                        \item b(bottom):放置在页面底部
+                        \item p(page):单独放置在一个页面
+                    \end{itemize}
+          \end{itemize}
+    \item 表格\\选择在线生成工具:latex-tables.com
+    \item 文献引用
+          \begin{itemize}
+              \item cite\{lable\}
+              \item begin\{thebibliography\}\\bibitem\{lable1\}...\\bibitem\{lable2\}\\end\{thebibliography\}
+              \item BIBTex管理文献
+                    \begin{enumerate}
+                        \item 设定区域:bibliographystyle\{unsrt\}
+                        \item bib文件:@article\{title,...\}
+                        \item 插入位置:cite\{title\}
+                        \item 参考文献位置:bibliography\{bib文件名\}
+                    \end{enumerate}
+          \end{itemize}
+\end{itemize}
+
+\subsection{\color{red}git版本控制}
+\subsubsection{\color{green}git安装与环境配置}
+\begin{enumerate}
+    \item 安装git
+          \begin{figure}[htbp]
+              \centering
+              \includegraphics[width=0.5\textwidth]{gitt.png}
+              \label{git}
+              \caption{git官网}
+          \end{figure}
+    \item git -v 检查版本信息
+    \item 配置用户名和邮箱\\git config --global user.name "venus"\\git config -- global user.email 3228693652@qq.com
+
+\end{enumerate}
+\subsubsection{\color{green}基础命令}
+\begin{itemize}
+    \item \textsf{repository(仓库)}
+          \begin{itemize}
+              \item git init 新建仓库
+              \item git clone 复制仓库
+              \item git status 查看仓库状态
+          \end{itemize}
+    \item \textsf{提交}
+          git add %支持文件夹 
+          添加到暂存区\\git commit (-a)(-m text)提交%支持通配
+          \\git log (--graph)(--oneline)查看提交记录
+    \item \textsf{回退版本}
+          \begin{itemize}
+              \item git reset --soft
+              \item git reset --hard
+              \item git reset --mixed
+              \item git diff 查看工作区、暂存区、本地仓库的区别
+          \end{itemize}
+    \item \textsf{比較}
+          \begin{itemize}
+              \item git diff 比較工作區和暫存區
+              \item git diff HEAD 工作區+暫存區 比較 本地倉庫
+              \item git diff -staged 暂存区和本地仓库
+                    %可比较提交
+          \end{itemize}
+    \item \textsf{删除}
+          \begin{itemize}
+              \item rm file
+              \item git rm <file> 从工作区和暂存区同时删除\cite{label1}
+              \item git rm --cached <file> 从暂存区删除\cite{label2}
+              \item git rm -r* 递归删除所有子目录和文件
+          \end{itemize}
+    \item \textsf{忽略(.gitignore)}
+          \begin{itemize}
+              \item[-] 系统或软件自动生成
+              \item[-] 编译产生的文件
+              \item[-] 日志文件，缓存文件，临时文件
+              \item[-] 身份、密码等敏感信息
+          \end{itemize}
+\end{itemize}
+\subsubsection{\color{green}分支}
+\begin{itemize}
+    \item git branch 创建分支
+    \item git switch切换分支
+    \item git merge (--abort)合并分支
+    \item git branch -d 删除分支
+\end{itemize}
+\subsubsection{\color{green}别名}
+alias graph="git log --oneline --graph --decorate --all"
+
+\newpage
+
+\begin{thebibliography}{99}
+    \bibitem{label1}Anita,ekjfisfjs
+    \bibitem{label2}Bieat,sfsdfwegbraref
+\end{thebibliography}
+
+
+
+
+
+\end{document}

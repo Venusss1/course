@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}\underline {\color {blue}实验内容}}{iii}{}%
+\contentsline {section}{\numberline {2}\underline {\color {blue}实验设计}}{iii}{}%
+\contentsline {subsection}{\numberline {2.1}\color {red}Shell工具和脚本}{iii}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}\color {green}Linux系统环境配置}{iii}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}\color {green}基本命令}{iii}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}\color {green}环境变量}{iv}{}%
+\contentsline {subsubsection}{\numberline {2.1.4}\color {green}文件操作}{iv}{}%
+\contentsline {subsubsection}{\numberline {2.1.5}\color {green}Shell脚本}{v}{}%
+\contentsline {subsection}{\numberline {2.2}\color {red}文本编辑工具Vim}{v}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}\color {green}编辑模式}{v}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}\color {green}基础命令}{vi}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}\color {green}操作符}{vi}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}\color {green}数量符}{vii}{}%
+\contentsline {subsection}{\numberline {2.3}\color {red}数据整理}{vii}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}\color {green}sed流编辑工具}{vii}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}\color {green}正则表达式}{viii}{}%

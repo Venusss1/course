@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}\underline {\color {blue}实验内容}}{iii}{}%
+\contentsline {section}{\numberline {2}\underline {\color {blue}实验设计}}{iii}{}%
+\contentsline {subsection}{\numberline {2.1}\color {red}python基础}{iii}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}\color {green}python简介}{iii}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}\color {green}python环境配置}{iii}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}\color {green}python与c的语法差异}{iv}{}%
+\contentsline {subsubsection}{\numberline {2.1.4}\color {green}循环}{v}{}%
+\contentsline {subsubsection}{\numberline {2.1.5}\color {green}数据类型}{v}{}%
+\contentsline {subsection}{\numberline {2.2}\color {red}pytorch视觉应用}{v}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}\color {green}PIL:python图像处理类库}{v}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}\color {green}Matplotlib}{vii}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}\color {green}NumPy}{viii}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}\color {green}SciPy}{ix}{}%
+\contentsline {section}{\numberline {3}\underline {\color {blue}实验心得}}{x}{}%
